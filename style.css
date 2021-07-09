@@ -149,7 +149,8 @@ nav .menu-btn i{
         display: inline-block;
         font-size: 30px;
         position: relative;
-        left: 0px;
+        left: 20px;
+        text-align: center;
     }
     .home .text-two{
         
@@ -157,6 +158,7 @@ nav .menu-btn i{
         font-size: 17px;
         position: relative;
         left: 0px;
+        text-align: center;
     }
     .home button{
         display: inline-block;
