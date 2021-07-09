@@ -145,6 +145,24 @@ nav .menu-btn i{
 }
 
 @media (max-width:940px){
-
+    .home .text-one{
+        display: inline-block;
+        font-size: 30px;
+        position: relative;
+        left: 0px;
+    }
+    .home .text-two{
+        
+        display: inline-block;
+        font-size: 17px;
+        position: relative;
+        left: 0px;
+    }
+    .home button{
+        display: inline-block;
+        position: relative;
+        top: 280px;
+        left: 123px;
+    }
 }
 /* home  */
