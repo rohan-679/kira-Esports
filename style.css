@@ -277,6 +277,9 @@ input[type="checkbox"]{
         position: static;
         padding: 0px 40px 0px 50px;
     }
+    .main .main-content img{
+        width: 100vw;
+    }
 }
 
 @media (max-width:768px){
@@ -368,6 +371,9 @@ input[type="checkbox"]{
         left: 10;
         letter-spacing: 0px;
         font-size: 20px;
+    }
+    .main .main-content img{
+        width: 100vw;
     }
 }
 
