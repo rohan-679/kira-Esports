@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navbar  */
+nav{
+    display: flex;
+    height: 122px;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px 0 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 9;
+}
+
+nav .logo{
+    width: 109px;
+    height: 100px;
+    border-bottom: 5px solid red;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0px 40px;
+    transition: all 0.3s ease;
+    
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+@media (max-width:1000px){
+    nav{
+        padding: 0px 40px 0px 50px;
+    }
+}
+
+@media (max-width:920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: '\f00d';
+    }
+    nav ul{
+        /* position: fixed; */
+        top: 120px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        z-index: 10;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0px;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        margin-top: 60px;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    }
+    nav ul li a:hover{
+        color: red;
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0px;
+    }
+}
+/* navbar ends */
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* main content  */
+
+/* main content ends */
+.main .main-content img{
+    position: absolute;
+    width: 1349px;
+    height: 527px;
+    left: 0px;
+    top: 117px;
+}
+
+.main .main-content h1{
+    width: 400px;
+    position: relative;
+    top: 275px;
+    left: 157px;
+    color: white;
+    font-size: 46px;
+    /* font-weight: 600; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main .main-content p{
+    position: relative;
+    top: 320px;
+    left: 157px;
+    width: 600px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main .main-content p span{
+    color: red;
+}
+.main .main-content .year{
+    position: relative;
+    top: 150px;
+    left: 50px;
+    z-index: 5;
+    color: white;
+}
+.main-content .button{
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* border: 2px solid red; */
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    top: 250px;
+    left: 930px;
+    background-color: red;
+    
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-content .button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(10);
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* media query  */
+
+/* nav media query  */
+@media (max-width:1000px){
+    nav{
+        position: static;
+        padding: 0px 40px 0px 50px;
+    }
+}
+
+@media (max-width:768px){
+    nav{
+        position: static;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: '\f00d';
+    }
+    nav ul{
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        z-index: 10;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0px;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left: -50%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+        /* border: 2px solid red; */
+    }
+    
+    nav ul li a:hover{
+        color: red;
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0px;
+    }
+    .main .main-content h1{
+        font-size: 37px;
+        position: relative;
+        left: 10px;
+        top: 180px;
+        
+    }
+    .main .main-content p{
+        font-size: 15px;
+        position: relative;
+        left: 10px;
+        top: 200px;
+        width: 300px;
+    }
+    .main .main-content .year{
+        position: relative;
+        top: 40px;
+        left: 90px;
+    }
+    .main-content .button{
+        position: relative;
+        top: 300px;
+        left: 130px;
+    }
+}
+
+/* nav media query ends here */
+
+/* media query ends */
