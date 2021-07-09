@@ -270,6 +270,9 @@ input[type="checkbox"]{
 
 /* nav media query  */
 @media (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
     nav{
         position: static;
         padding: 0px 40px 0px 50px;
@@ -277,6 +280,9 @@ input[type="checkbox"]{
 }
 
 @media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     nav{
         position: static;
     }
