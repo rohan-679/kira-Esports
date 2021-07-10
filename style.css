@@ -139,7 +139,7 @@ nav .menu-btn i{
     border-bottom: 4px solid red;
     height: 80px;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 20px;
  }
 
 
@@ -263,7 +263,9 @@ nav .menu-btn i{
     color: white;
     display: inline-block;
     position: absolute;
-    left: 97px;
+    left: 207px;
+    font-size: 18px;
+    top: 140px;
     font-family: 'Montserrat', sans-serif;
 }
 .home .home-content{
@@ -406,6 +408,8 @@ nav .menu-btn i{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 40px;
+    
+    
 }
 
 .head-content .head-second h1{
@@ -414,6 +418,7 @@ nav .menu-btn i{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin: 0px 10px 40px 10px;
+    
 }
 .head-content .head-third h1{
     font-size: 90px;
@@ -422,6 +427,9 @@ nav .menu-btn i{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+.head-content .head-third h1 span{
+    color: red;
 }
 /* @media (max-width:940px){
     .head-content .head-first h1{
