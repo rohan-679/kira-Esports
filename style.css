@@ -3,6 +3,7 @@
     font-family: Akira;
     src: url('./fonts/Akira\ Expanded\ Demo.otf');
 }  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 @font-face{
     font-family: monument-regular;
     src: url('./fonts/MonumentExtended-Regular.otf');
@@ -246,8 +247,9 @@ nav .menu-btn i{
 }
 .head-content .head-first h1{
     font-size: 45px;
-    /*font-family: 'Akira Expanded', sans-serif;*/
-    font-family: 'dharma', sans-serif; 
+    /* font-family: 'Akira Expanded', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'dharma', sans-serif; */
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
@@ -261,9 +263,10 @@ nav .menu-btn i{
     margin-bottom: 40px;
 }
 .head-content .head-third h1{
-    font-size: 55px;
+    font-size: 95px;
     text-align: center;
-    font-family: 'Akira Expanded', sans-serif;
+    /* font-family: 'Akira Expanded', sans-serif; */
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -286,13 +289,13 @@ nav .menu-btn i{
         margin-top: 120px;
     }
     .head-content .head-first h1{
-        font-size: 25px;
+        font-size: 28px;
     }
     .head-content .head-second h1{
         font-size: 12px;
     }
     .head-content .head-third h1{
-        font-size: 35px;
+        font-size: 55px;
     }
 }
 @media (min-width:768px) and (max-width:1000px){
@@ -318,7 +321,8 @@ nav .menu-btn i{
     font-size: 85px;
     text-align: left;
     text-transform: uppercase;
-    font-family: 'Akira Expanded', sans-serif;
+    /* font-family: 'Akira Expanded', sans-serif; */
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     position: relative;
     top: 50px;
@@ -351,11 +355,13 @@ nav .menu-btn i{
         
     }
     .squad-heading h1{
-        font-size: 25px;
+        font-size: 40px;
     }
     .squad .squad-info p{
         font-size: 14px;
         width: 80vw;
+        position: relative;
+        left: -10px;
     }
 }
 @media (min-width:768px) and (max-width:1000px){
@@ -382,7 +388,8 @@ nav .menu-btn i{
     font-size: 85px;
     text-align: left;
     text-transform: uppercase;
-    font-family: 'Akira Expanded', sans-serif;
+    /* font-family: 'Akira Expanded', sans-serif; */
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     position: relative;
     top: 50px;
@@ -406,6 +413,7 @@ nav .menu-btn i{
     color: red;
 }
 @media (max-width:768px){
+
     .about{
         height: 100vh;
     }
@@ -415,7 +423,7 @@ nav .menu-btn i{
     left: 30px;
 }
 .about-heading h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 .about .about-info p{
     width: 80vw;
