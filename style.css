@@ -1,9 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap'); 
- @font-face{
+ /* @font-face{
     font-family: Akira;
     src: url('./fonts/Akira\ Expanded\ Demo.otf');
-} 
-
+}  */
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
 *{
     margin: 0;
     padding: 0;
@@ -115,7 +115,7 @@ nav .menu-btn i{
     top: 180px;
     left: 220px;
     font-size: 46px;
-    font-family: 'Akira', sans-serif;
+    font-family: 'Akira Expanded', sans-serif;
     color: white;
     letter-spacing: 2px;
 }
@@ -193,7 +193,7 @@ nav .menu-btn i{
 }
 .head-content .head-first h1{
     font-size: 35px;
-    font-family: 'Akira', sans-serif;
+    font-family: 'Akira Expanded', sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
@@ -209,7 +209,7 @@ nav .menu-btn i{
 .head-content .head-third h1{
     font-size: 55px;
     text-align: center;
-    font-family: 'Akira', sans-serif;
+    font-family: 'Akira Expanded', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -241,7 +241,7 @@ nav .menu-btn i{
     font-size: 85px;
     text-align: left;
     text-transform: uppercase;
-    font-family: 'Akira', sans-serif;
+    font-family: 'Akira Expanded', sans-serif;
     display: inline-block;
     position: relative;
     top: 50px;
@@ -259,6 +259,16 @@ nav .menu-btn i{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+@media (max-width:940px){
+    .squad-heading h1{
+        font-size: 25px;
+    }
+    .squad .squad-info p{
+        font-size: 14px;
+        width: 80vw;
+    }
+}
+
 /* squad */
 
 /* ************************************************************************************************ */
@@ -277,7 +287,7 @@ nav .menu-btn i{
     font-size: 85px;
     text-align: left;
     text-transform: uppercase;
-    font-family: 'Akira', sans-serif;
+    font-family: 'Akira Expanded', sans-serif;
     display: inline-block;
     position: relative;
     top: 50px;
@@ -299,4 +309,14 @@ nav .menu-btn i{
 .about .about-info p span{
     color: red;
 }
+@media (max-width:940px){
+.about-heading h1{
+    font-size: 25px;
+}
+.about .about-info p{
+    width: 80vw;
+    font-size: 14px;
+}
+}
+
 /* about us section  */
