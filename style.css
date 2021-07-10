@@ -225,6 +225,9 @@ nav .menu-btn i{
         left: 110px;
     }
 }
+@media(max-width: 1000px){
+    
+}
 /* home  */
 
 /* *********************************************************************************************************** */
@@ -292,6 +295,12 @@ nav .menu-btn i{
         font-size: 35px;
     }
 }
+@media (min-width:768px) and (max-width:1000px){
+    .head{
+        height: 50vh;
+    }
+}
+
 /* head section  */
 /* ***************************************************************************************************** */
 
@@ -347,6 +356,11 @@ nav .menu-btn i{
     .squad .squad-info p{
         font-size: 14px;
         width: 80vw;
+    }
+}
+@media (min-width:768px) and (max-width:1000px){
+    .squad .squad-info p{
+        font-size: 22px;
     }
 }
 
@@ -408,5 +422,12 @@ nav .menu-btn i{
     font-size: 13px;
 }
 }
+@media (min-width:768px) and (max-width:1000px){
+    .about .about-info p{
+        margin-top: 30px;
+        font-size: 22px;
+    }
+}
+
 
 /* about us section  */
