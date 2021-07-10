@@ -99,7 +99,7 @@ nav .menu-btn i{
     background: url('img/Rectangle 3.1.jpg');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .home .home-content{
     /* background: red; */
@@ -173,6 +173,15 @@ nav .menu-btn i{
         position: relative;
         top: 280px;
         left: 123px;
+    }
+}
+@media(max-width:750px){
+    .text .text-one{
+        display: inline-block;
+        font-size: 30px;
+        position: relative;
+        left: 20px;
+        text-align: center;
     }
 }
 /* home  */
@@ -295,6 +304,7 @@ nav .menu-btn i{
     border-bottom: 5px solid #EB9646;
     ;
 }
+
 .about .about-info{
     width: 90vw;
     position: relative;
@@ -310,6 +320,11 @@ nav .menu-btn i{
     color: red;
 }
 @media (max-width:940px){
+.about .about-info{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
 .about-heading h1{
     font-size: 25px;
 }
