@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos animate  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- aos animate  -->
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -66,15 +69,16 @@
 
         </div>
     </section>
+    <hr>
     <!-- head section  -->
 
     <!-- about us section  -->
-    <section class="about" id="about">
+    <section class="about" id="about" >
         <div class="about-heading">
             <h1>ABOUT US</h1>
         </div>
         <div class="about-info">
-            <p> <span> kira esports </span> is india’s renowned professional gaming organization established in 2019. since our
+            <p data-aos="zoom-in"> <span> kira esports </span> is india’s renowned professional gaming organization established in 2019. since our
                 grassroots beginnings as fortnite professionals, we have grown into multifaceted professional gaming
                 organization made by sportsmen, for the sportsmen. <br><br>
 
@@ -99,7 +103,7 @@
             <h1>gg squad</h1>
         </div>
         <div class="squad-info">
-            <p>kira’s “gg squad” is a rapidly growing digital talent management brand that directly targets gaming
+            <p data-aos="zoom-in">kira’s “gg squad” is a rapidly growing digital talent management brand that directly targets gaming
                 influeners, streamers, and esport teams. <br><br>
                 We believe "Life's better Multiplayer" and it is our goal to connect gamers everywhere through the
                 creation and curation of viral content specifically made to "tag the squad in". gg squad is a platform
@@ -113,7 +117,21 @@
     </section>
     <!-- gg squad section  -->
 
+
+
+    <!-- javascript  -->
+
+    <!-- custome js  -->
     <script src="app.js"></script>
+
+    <!-- aos animate js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+    <!-- javascript  -->
 </body>
 
 </html>
