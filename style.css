@@ -129,6 +129,13 @@ nav .menu-btn i{
     background-position: center center;
     /* background-attachment: fixed; */
 }
+.home h1{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 97px;
+    font-family: 'Montserrat', sans-serif;
+}
 .home .home-content{
     /* background: red; */
     width: 100%;
@@ -239,6 +246,9 @@ nav .menu-btn i{
         top: 340px;
         left: 110px;
     }
+    .home h1{
+        left: 110px;
+    }
 }
 
 /* home  */
@@ -275,7 +285,7 @@ nav .menu-btn i{
     margin-bottom: 40px;
 }
 .head-content .head-third h1{
-    font-size: 95px;
+    font-size: 90px;
     text-align: center;
     /* font-family: 'Akira Expanded', sans-serif; */
     font-family: 'Oswald', sans-serif;
@@ -307,7 +317,7 @@ nav .menu-btn i{
         font-size: 12px;
     }
     .head-content .head-third h1{
-        font-size: 55px;
+        font-size: 45px;
     }
 }
 @media (min-width:768px) and (max-width:1000px){
