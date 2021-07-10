@@ -32,7 +32,7 @@
     border-radius: 60px;
     font-size: 38px;
     right: 30px;
-    top: 700px;
+    top: 580px;
 }
 
 /* navbar */
@@ -240,9 +240,7 @@ nav .menu-btn i{
         left: 110px;
     }
 }
-@media(max-width: 1000px){
-    
-}
+
 /* home  */
 
 /* *********************************************************************************************************** */
@@ -339,14 +337,14 @@ nav .menu-btn i{
     font-family: 'Oswald', sans-serif;
     display: inline-block;
     position: relative;
-    top: 50px;
+    top: 20px;
     left: 50px;
     border-bottom: 5px solid red;
 }
 .squad .squad-info{
     width: 50vw;
     position: relative;
-    top: 100px;
+    top: 60px;
     left: 50px;
 }
 .squad .squad-info p{
