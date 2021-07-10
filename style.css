@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap'); 
+ @font-face{
+    font-family: Akira;
+    src: url('./fonts/Akira\ Expanded\ Demo.otf');
+} 
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +18,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 nav ul{
     display: flex;
@@ -47,6 +52,7 @@ nav .menu-btn i{
     display: none;
 }
 @media (max-width:940px){
+    
     nav .menu-btn i{
         display: block;
     }
@@ -79,7 +85,9 @@ nav .menu-btn i{
         width: 70px;
     }
 }
-
+.disable{
+    left: -100%;
+}
 /* navbar ends here  */
 
 /* ************************************************************************************************************ */
@@ -107,7 +115,7 @@ nav .menu-btn i{
     top: 180px;
     left: 220px;
     font-size: 46px;
-    font-family: 'Akira Expanded', sans-serif;
+    font-family: 'Akira', sans-serif;
     color: white;
     letter-spacing: 2px;
 }
@@ -168,3 +176,127 @@ nav .menu-btn i{
     }
 }
 /* home  */
+
+/* *********************************************************************************************************** */
+/* head section  */
+.head{
+    width: 100%;
+    height: 70vh;
+    background: black;
+    color: white;
+    /* overflow: hidden; */
+    display: inline-block;
+}
+.head .head-content{
+    width: 100%;
+    height: 90%;
+}
+.head-content .head-first h1{
+    font-size: 35px;
+    font-family: 'Akira', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.head-content .head-second h1{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.head-content .head-third h1{
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Akira', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+@media (max-width:940px){
+    .head-content .head-first h1{
+        font-size: 25px;
+    }
+    .head-content .head-second h1{
+        font-size: 12px;
+    }
+    .head-content .head-third h1{
+        font-size: 35px;
+    }
+}
+/* head section  */
+/* ***************************************************************************************************** */
+
+/* squad */
+.squad{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: black;
+}
+.squad-heading{
+    display: inline-block;
+}
+.squad-heading h1{
+    font-size: 85px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Akira', sans-serif;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-bottom: 5px solid red;
+}
+.squad .squad-info{
+    width: 50vw;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.squad .squad-info p{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+/* squad */
+
+/* ************************************************************************************************ */
+
+/* about us section  */
+.about{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+.about-heading{
+    display: inline-block;
+}
+.about-heading h1{
+    font-size: 85px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Akira', sans-serif;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-bottom: 5px solid #EB9646;
+    ;
+}
+.about .about-info{
+    width: 90vw;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.about .about-info p{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.about .about-info p span{
+    color: red;
+}
+/* about us section  */
