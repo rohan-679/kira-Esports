@@ -4,8 +4,16 @@
     src: url('./fonts/Akira\ Expanded\ Demo.otf');
 }  */
 @font-face{
+    font-family: monument-regular;
+    src: url('./fonts/MonumentExtended-Regular.otf');
+}
+@font-face{
     font-family: monument;
     src: url('./fonts/MonumentExtended-Ultrabold.otf')
+}
+@font-face{
+    font-family: dharma;
+    src: url('./fonts/dharmagothice_exbold_r.otf')
 }
 @import url('http://fonts.cdnfonts.com/css/akira-expanded');
 *{
@@ -35,6 +43,7 @@ nav ul li {
 nav ul li a{
     color: white;
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'monument-regular', sans-serif; */
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -118,17 +127,18 @@ nav .menu-btn i{
     position: relative;
     top: 180px;
     left: 220px;
-    font-size: 46px;
+    font-size: 60px;
+    font-weight: 500;
     /* font-family: 'Akira Expanded', sans-serif; */
-    font-family: 'monument', sans-serif;
+    font-family: 'dharma', sans-serif;
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
 }
 .home .text-two{
     display: inline-block;
-    position: relative;
-    top: 230px;
-    left: -370px;
+    position: absolute;
+    top: 390px;
+    left: 70px;
     color: white;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
@@ -144,25 +154,26 @@ nav .menu-btn i{
     left: 1060px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    padding: 5px 20px;
+    padding: 5px 30px;
     background: red;
     color: white;
     outline: none;
     border: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    transform: skew(-20deg);
 }
 .home button:hover{
     background: white;
     color: black;
 }
 
-@media (max-width:940px){
+/* @media (max-width:940px){
     .home .text-one{
         display: inline-block;
-        font-size: 30px;
+        font-size: 50px;
         position: relative;
-        left: 20px;
+        left: 46px;
         text-align: center;
     }
     .home .text-two{
@@ -188,6 +199,31 @@ nav .menu-btn i{
         left: 20px;
         text-align: center;
     }
+} */
+
+@media(max-width: 768px){
+    .home-content{
+        display: inline-block;
+    }
+    .home .text-one{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        text-align: center;
+        font-size: 45px;
+    }
+    .home .text-two{
+        font-size: 18px;
+        position: absolute;
+        left: 40px;
+        top: 370px;
+    }
+    .home button{
+        display: inline-block;
+        position: relative;
+        top: 340px;
+        left: 110px;
+    }
 }
 /* home  */
 
@@ -206,8 +242,9 @@ nav .menu-btn i{
     height: 90%;
 }
 .head-content .head-first h1{
-    font-size: 35px;
+    font-size: 45px;
     font-family: 'Akira Expanded', sans-serif;
+    /* font-family: 'dharma', sans-serif; */
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
@@ -227,7 +264,24 @@ nav .menu-btn i{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-@media (max-width:940px){
+/* @media (max-width:940px){
+    .head-content .head-first h1{
+        font-size: 25px;
+    }
+    .head-content .head-second h1{
+        font-size: 12px;
+    }
+    .head-content .head-third h1{
+        font-size: 35px;
+    }
+} */
+@media(max-width: 768px){
+    .head{
+        height: 100vh;
+    }
+    .head-content .head-first{
+        margin-top: 120px;
+    }
     .head-content .head-first h1{
         font-size: 25px;
     }
@@ -282,6 +336,19 @@ nav .menu-btn i{
         width: 80vw;
     }
 }
+@media(max-width: 768px){
+    .squad{
+        height: 100vh;
+        
+    }
+    .squad-heading h1{
+        font-size: 25px;
+    }
+    .squad .squad-info p{
+        font-size: 14px;
+        width: 80vw;
+    }
+}
 
 /* squad */
 
@@ -324,7 +391,10 @@ nav .menu-btn i{
 .about .about-info p span{
     color: red;
 }
-@media (max-width:940px){
+@media (max-width:768px){
+    .about{
+        height: 100vh;
+    }
 .about .about-info{
     display: inline-block;
     position: relative;
@@ -335,7 +405,7 @@ nav .menu-btn i{
 }
 .about .about-info p{
     width: 80vw;
-    font-size: 14px;
+    font-size: 13px;
 }
 }
 
