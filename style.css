@@ -3,6 +3,10 @@
     font-family: Akira;
     src: url('./fonts/Akira\ Expanded\ Demo.otf');
 }  */
+@font-face{
+    font-family: monument;
+    src: url('./fonts/MonumentExtended-Ultrabold.otf')
+}
 @import url('http://fonts.cdnfonts.com/css/akira-expanded');
 *{
     margin: 0;
@@ -115,9 +119,10 @@ nav .menu-btn i{
     top: 180px;
     left: 220px;
     font-size: 46px;
-    font-family: 'Akira Expanded', sans-serif;
+    /* font-family: 'Akira Expanded', sans-serif; */
+    font-family: 'monument', sans-serif;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 .home .text-two{
     display: inline-block;
@@ -326,7 +331,7 @@ nav .menu-btn i{
     left: 30px;
 }
 .about-heading h1{
-    font-size: 25px;
+    font-size: 30px;
 }
 .about .about-info p{
     width: 80vw;
