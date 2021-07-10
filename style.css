@@ -21,6 +21,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
+    
 }
 
 .arrow a i{
@@ -127,6 +129,7 @@ nav .menu-btn i{
     font-family: 'Montserrat', sans-serif;
     transition: all 0.3s ease;
     height: 122px;
+    
  }
 
 .navbar .max-width{
@@ -222,7 +225,7 @@ nav .menu-btn i{
         
         position: fixed;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         left: -100%;
         top: 200;
         background: #111;
@@ -235,6 +238,7 @@ nav .menu-btn i{
     }
     .navbar .menu li{
         display: block;
+
     }
     .navbar .menu li a{
         display: inline-block;
@@ -253,11 +257,13 @@ nav .menu-btn i{
 /* home  */
 .home{
     height: 100vh;
-    width: 100%;
     background: url('img/Rectangle 3.1.jpg');
     background-size: cover;
     background-position: center center;
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    
 }
 .home h1{
     color: white;
@@ -269,7 +275,7 @@ nav .menu-btn i{
     font-family: 'Montserrat', sans-serif;
 }
 .home .home-content{
-    /* background: red; */
+    
     width: 100%;
     height: 100%;
     margin: auto;
@@ -277,13 +283,15 @@ nav .menu-btn i{
     flex-direction: column;
 }
 .home .text-one{
+
     display: inline-block;
     position: relative;
+    
     top: 280px;
     left: 220px;
     font-size: 60px;
     font-weight: 500;
-    /* font-family: 'Akira Expanded', sans-serif; */
+    
     font-family: 'dharma', sans-serif;
     color: white;
     letter-spacing: 8px;
@@ -305,7 +313,7 @@ nav .menu-btn i{
     display: inline-block;
     position: relative;
     top: 260px;
-    left: 1060px;
+    left: 1000px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     padding: 5px 30px;
@@ -320,7 +328,7 @@ nav .menu-btn i{
 .home button:hover{
     background: white;
     color: black;
-}
+} 
 
 /* @media (max-width:940px){
     .home .text-one{
@@ -354,6 +362,8 @@ nav .menu-btn i{
         text-align: center;
     }
 } */
+
+
 
 @media(max-width: 768px){
     .home-content{
