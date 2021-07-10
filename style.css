@@ -23,6 +23,17 @@
     box-sizing: border-box;
 }
 
+.arrow a i{
+    color: white;
+    display: inline-block;
+    position: fixed;
+    background: red;
+    z-index: 10;
+    border-radius: 60px;
+    font-size: 38px;
+    right: 30px;
+    top: 560px;
+}
 
 /* navbar */
 nav{
@@ -97,6 +108,9 @@ nav .menu-btn i{
     }
     .logo img{
         width: 70px;
+    }
+    .arrow{
+        display: none;
     }
 }
 .disable{
